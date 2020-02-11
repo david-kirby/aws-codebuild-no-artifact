@@ -36,7 +36,7 @@ variable "build_image" {
 variable "privileged_mode" {
   description = "Whether or not to run the container in privileged mode"
   type        = string
-  default     = false
+  default     = true
 }
 
 variable "environment_type" {

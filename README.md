@@ -22,7 +22,7 @@ Version |
 | environment_type | Type of environment CodeBuild should run in.<br>More info: https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html | `string` | `"LINUX_CONTAINER"` | no |
 | environment_variables | List of maps with keys of name, value, type. If type is not specified, it will default to 'PLAINTEXT'.<br>More info: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_EnvironmentVariable.html | `list` | `[]` | no |
 | github_token_ssm_parameter | SSM parameter name that contains a Github token for pulling the source code | `string` | `"/github/token"` | no |
-| privileged_mode | Whether or not to run the container in privileged mode | `string` | `false` | no |
+| privileged_mode | Whether or not to run the container in privileged mode | `string` | `true` | no |
 
 ## Outputs
 
