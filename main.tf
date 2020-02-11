@@ -83,7 +83,7 @@ resource "aws_iam_role_policy" "codebuild_policy" {
 }
 
 resource "aws_iam_role_policy" "custom_codebuild_policy" {
-  count  = var.codebuild_custom_policy == null ? 0 : 1
+  count  = var.codebuild_custom_policy == "" ? 0 : 1
   name   = "${var.project_name}-custom"
   role   = aws_iam_role.codebuild.id
   policy = var.codebuild_custom_policy

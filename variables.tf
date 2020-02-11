@@ -75,5 +75,5 @@ variable "github_url" {
 variable "codebuild_custom_policy" {
   description = "JSON formed IAM policy document"
   type        = string
-  default     = null
+  default     = ""
 }
